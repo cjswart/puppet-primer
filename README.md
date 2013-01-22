@@ -10,12 +10,15 @@ Have the following software installed:
 Initialization
 --------------
 Download and add a CentOS 6.3 box for vagrant:
+
     vagrant box add centos63 https://dl.dropbox.com/u/7225008/Vagrant/CentOS-6.3-x86_64-minimal.box
 
 Start the image:
+
     vagrant up
 
 The following output will be shown when puppet runs successfully:
+
     [default] Running Puppet with /tmp/vagrant-puppet/manifests/primer.pp...
     notice: Hello
     
@@ -24,5 +27,6 @@ The following output will be shown when puppet runs successfully:
     notice: Finished catalog run in 0.03 seconds
 
 Run puppet (again):
+
     vagrant provision
 
